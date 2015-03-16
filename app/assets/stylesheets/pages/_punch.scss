@@ -276,6 +276,10 @@
       opacity: 0;
       transition: opacity 0.1s ease;
       color: #D9552F;
+
+      @media (max-width: $screen-sm) {
+        opacity: 1;
+      }
   }
 
   .feature-image {
