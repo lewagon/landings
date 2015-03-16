@@ -26,25 +26,66 @@
           5 startups viennent faire challenger leur produit par un jury d'experts (software engineers, front-end devs, UI & UX designers, product managers, data-scientist)
         </p>
       </div>
-      <div class="col-sm-12 pitch">
+      <div class="col-sm-12 pitch interet">
         <h2>L'intérêt</h2>
         <p>
           Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
         </p>
       </div>
-
+      </div>
+      <div class='wrapper-jury'>
       <div class="container">
       <div class="col-sm-12 jury">
         <h2>Le Jury</h2>
-        <p>
-          Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
-        </p>
+        <div class="col-sm-6 col-xs-12">
+          <div class='card judge'>
+
+            <div class="judge-seb feature-image ">
+            </div>
+            <h3>Sébastien Saunier</h3>
+            <p>
+              Baroudeur du code et CTO du Wagon, Sébastien sévit en tant que coach technique pour startup. Il aura à coeur de transmettre rigueur et bonne pratique !
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class='card judge '>
+
+            <div class=" judge-boris feature-image ">
+            </div>
+            <h3>Boris Paillard</h3>
+            <p>
+              Boris a fui sa salle de marché pour se lancer dans le code corps et âme. Maintenant CEO du Wagon, il comprend parfaitement les besoins des débutants et a codé avec Sébastien le site et les plate-formes pédagogiques du Wagon.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class='card judge'>
+
+            <div class="feature-image judge-romain">
+            </div>
+            <h3>Romain Paillard</h3>
+            <p>
+              Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class='card judge'>
+
+            <div class="feature-image judge-invite">
+            </div>
+            <h3>L'invité de la semaine</h3>
+            <p>
+              Chaque semaine, le jury invite un nouveau profil technique pour renforcer les feedbacks produits.
+            </p>
+          </div>
+        </div>
       </div>
       </div>
 
       </div>
 
-
+      </div>
 
       <div class='people'>
       <div class="container">
@@ -63,7 +104,7 @@
                 <h3>Product Owner</h3>
                 <p>
                   Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
-                  <a>S'incrire comme Product Owner</a>
+                  <a>Proposer un produit</a>
                 </p>
               </div>
 
@@ -71,13 +112,16 @@
                 <header>
                   Poster un Produit
                 </header>
-                <form action="" method="posts">
-                  <input type="text" class='input' placeholder='URL du Produit'>
-                  <input type="text" class='input' placeholder='Courte description'>
-                  <input type="text" class='input' placeholder='Email'>
+                <form action="https://formspree.io/thomas@lewagon.org" method="post">
+                  <input type="text" class='input' name='product_url' placeholder='URL du Produit'>
+                  <input type="text" class='input'  name='description'  placeholder='Courte description'>
+                  <input type="text" class='input' name='email'  placeholder='Email'>
+                  <input type="hidden" name="_cc" value="miruna@lewagon.org" />
                   <div class="group">
-                    <label for="checkbox"> C'est mon produit </label>
-                    <input name='checkbox' type='checkbox'>
+                    <label for="checkbox">
+                      C'est mon produit
+                      <input name='mon_produit' type='checkbox' name="C'est mon produit">
+                    </label>
                     </div>
 
                   <input type="submit" class='submit'>

@@ -46,8 +46,25 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+
+
+    ul {
+      li {
+        display: inline-block;
+      }
+
+      span {
+        display: block;
+        height: 150px;
+        width:150px;
+        background: #EDEDED;
+      }
+    }
+
     h2 {
       padding-bottom: 20px;
+      color: white;
+      text-shadow: 0 2px 0 rgb(65, 54, 51);
     }
 
     p {
@@ -191,43 +208,12 @@
     }
 
   }
-  .feature-image {
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px;
 
-
-
-    &-public {
-      background-position: 86%;
-    }
-
-    &-fighter {
-
-
-      &-2 {
-        background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e6/John_L._Sullivan_1898.jpg);
-        background-size: cover;
-        background-position: center top;
-        background-size: 100%;
-      }
-
-      &-3 {
-        background-image: url(/assets/PH-51df90b6c3d7299105b811ee68100983.png);
-        background-size: cover;
-        background-position: left top
-        ;
-        background-size: 308%;
-      }
-    }
-  }
 }
 
 .card {
   border-radius: 3px;
-  background: rgb(250, 250, 250);
+  background: #F7F7F7;
   margin: 30px;
   border-bottom: 1px solid rgb(232, 232, 232);
   padding-top: 40px;
@@ -236,6 +222,12 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  p {
+    line-height: 1.5;
+    font-size: 21px;
+    color: #747474;
+  }
 
   &:hover {
     a {
@@ -274,6 +266,29 @@
     height: 120px;
     transition: 0.1s ease background;
     border-radius: 3px 3px 0px 0px;
+  }
+
+  &.judge {
+
+
+
+
+    p {
+      line-height: 1.5;
+      font-size: 21px;
+      color: #747474;
+    }
+
+    h3 {
+      font-weight: bold;
+      color: rgb(83, 69, 64);
+      text-shadow: none;
+
+    }
+    &:after {
+      background: white;
+      border-bottom: 1px solid rgb(231, 231, 231);
+    }
   }
 
   &.lover {
@@ -388,4 +403,73 @@ form {
     box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.25),inset 0 0 0 1px rgba(0,0,0,0.25);
     outline: 0;
   }
+}
+
+.feature-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+
+  &-fighter {
+
+
+    &-2 {
+      background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e6/John_L._Sullivan_1898.jpg);
+      background-size: cover;
+      background-position: center top;
+      background-size: 100%;
+    }
+
+    &-3 {
+      background-image: url(/assets/PH-51df90b6c3d7299105b811ee68100983.png);
+      background-size: cover;
+      background-position: left top
+      ;
+      background-size: 308%;
+    }
+  }
+}
+
+.judge {
+  &-boris {
+      background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Boris-Paillard_avatar_1382610686-512x512.jpg);
+      background-size: cover;
+  }
+
+  &-seb {
+      background-size: 100%;
+      background: url(http://d9sch4zul5dl8.cloudfront.net/assets/teachers/seb-35df9e5cbc47899488feeabff2d5b8fb.png);
+  }
+
+  &-romain {
+      background-size: 100%;
+
+      background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Romain-Paillard_avatar_1382546930-512x512.jpg);
+  }
+
+  &-invite {
+      background-size: 100%;
+      background: url(http://www.tsmplug.com/wp-content/uploads/2014/12/muhammad-ali-9000469231.jpg);
+  }
+}
+
+.interet {
+  padding-bottom: 100px;
+}
+
+.wrapper-jury {
+  background: #534540;
+}
+
+.judge-seb {
+  background-size: 100%;
+}
+
+.judge-romain {
+  background-size: 100%;
+}
+
+.judge-invite {
+  background-size: cover;
+  background-position: center center;
 }
