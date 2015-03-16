@@ -1,5 +1,10 @@
 # Landing
 
+## Testing with subdomain
+
+1. Launch your app with `rails s -b 0.0.0.0`
+1. Go to `http://punch.lvh.me:3000` for instance
+
 ## Configuration
 
 The app configuration lies in `config/application.yml` and is **not**
