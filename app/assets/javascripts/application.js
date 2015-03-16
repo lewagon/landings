@@ -9,9 +9,15 @@
 // app/assets/javascripts/app instead, and put your code there
 
 
-$('#productOwner').click(function(){
+$('#productOwner .clickable').click(function(){
   $('.form-container').addClass('active')
+
 })
+
+$('.form-container i').on('click', function(){
+  $('.form-container').removeClass('active')
+})
+
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
