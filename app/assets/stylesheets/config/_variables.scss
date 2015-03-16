@@ -3,18 +3,37 @@
  * ------------------------------------- */
 // Google fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700|Raleway:300,400");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Montserrat", "sans-serif";
+$base-font: Avenir;
+$header-font: Avenir;
 $navbar-font: 'Raleway', "sans-serif";
 
-// Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-35.eot');
+  src: font-url('avenir/avenir-35.ttf'),
+       font-url('avenir/avenir-35.svg'),
+       font-url('avenir/avenir-35.woff')
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-45.eot');
+  src: font-url('avenir/avenir-45.ttf'),
+       font-url('avenir/avenir-45.svg'),
+       font-url('avenir/avenir-45.woff');
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-65.eot');
+  src: font-url('avenir/avenir-65.ttf'),
+       font-url('avenir/avenir-65.svg'),
+       font-url('avenir/avenir-65.woff');
+
+  font-weight: bold;
+}
 // $my-font: "Font Name";
 
 // Font-size and line-height
