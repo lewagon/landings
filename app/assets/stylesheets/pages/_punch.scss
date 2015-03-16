@@ -99,6 +99,15 @@
     font-size: 25px;
     color: rgb(152, 61, 36);
 
+    @media (max-width: $screen-sm) {
+      text-align: center;
+      position: relative;
+      margin: 0;
+      margin-right: 0;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
     p {
       &:first-child {
         color: white;
@@ -120,6 +129,13 @@
     svg {
       width: 40%;
       margin-left: 20px;
+
+      @media (max-width: $screen-sm) {
+        width: 60%;
+        display: block;
+        margin-left: 20px;
+        margin: auto;
+      }
     }
   }
 
@@ -134,6 +150,8 @@
     float: right;
     margin-right: 20px;
       margin-top: 50px;
+
+
 
     li {
       display: inline-block;
