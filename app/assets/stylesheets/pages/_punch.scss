@@ -252,10 +252,7 @@
   z-index: 1;
   overflow: hidden;
 
-  @media (max-width: $screen-xs ) {
-    margin: 0;
-    margin-bottom: 30px;
-  }
+
 
   p {
     line-height: 1.5;
@@ -305,7 +302,10 @@
   &.judge {
 
 
-
+    @media (max-width: $screen-xs ) {
+      margin: 0;
+      margin-bottom: 30px;
+    }
 
     p {
       line-height: 1.5;
@@ -317,6 +317,18 @@
       font-weight: bold;
       color: rgb(83, 69, 64);
       text-shadow: none;
+
+      @media (max-width: $screen-xs) {
+        text-align: left;
+        position: relative;
+        top: 0;
+        display: block;
+        margin-left: 30px;
+        font-size: 22px;
+        padding-left: 0;
+        z-index: 1;
+        display: block;
+      }
 
     }
     &:after {
