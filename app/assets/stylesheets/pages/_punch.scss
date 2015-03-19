@@ -49,12 +49,20 @@
   }
 
   .startup {
-    background-image: url(http://i.dailymail.co.uk/i/pix/2011/11/09/article-2059249-03701A860000044D-498_468x343.jpg);
-    &:first-child {
-      background-image: url(http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2009/10/30/1256905958016/muhammad-ali-001.jpg);
+    &-bg1 {
+      background-image: image-url("punch/bg1.jpg");
     }
-    &:last-child {
-      background-image: url(https://tikatango.files.wordpress.com/2013/05/muhammad-ali-boxing-sports-3.jpg);
+    &-bg2 {
+      background-image: image-url("punch/bg2.jpg");
+    }
+    &-bg3 {
+      background-image: image-url("punch/bg3.jpg");
+    }
+    &-bg4 {
+      background-image: image-url("punch/bg4.jpg");
+    }
+    &-bg5 {
+      background-image: image-url("punch/bg5.jpg");
     }
     background-size: 100%;
     border-radius: 5px;
@@ -76,7 +84,8 @@
     }
     &-img {
       border-radius: 10px;
-      border: 2px solid darken(rgba(217, 85, 47, 1), 2%);
+      background: white;
+      border: 2px solid 2px solid rgba(215, 78, 39, 0.1);
       margin: 20px auto;
       width: 60%;
     }
@@ -484,14 +493,14 @@ form {
 
 
     &-2 {
-      background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e6/John_L._Sullivan_1898.jpg);
+      background-image: image-url('punch/po.jpg');
       background-size: cover;
       background-position: center top;
       background-size: 100%;
     }
 
     &-3 {
-      background-image: image-url('PH.png');
+      background-image: image-url('punch/ph.png');
       background-size: cover;
       background-position: left top
       ;
@@ -502,23 +511,23 @@ form {
 
 .judge {
   &-boris {
-    background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Boris-Paillard_avatar_1382610686-512x512.jpg);
+    background: image-url("punch/boris.jpg");
     background-size: cover;
   }
 
   &-seb {
     background-size: 100%;
-    background: url(http://d9sch4zul5dl8.cloudfront.net/assets/teachers/seb-35df9e5cbc47899488feeabff2d5b8fb.png);
+    background: image-url("punch/seb.png");
   }
 
   &-romain {
     background-size: 100%;
-    background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Romain-Paillard_avatar_1382546930-512x512.jpg);
+    background: image-url("punch/romain.jpg");
   }
 
   &-invite {
     background-size: 100%;
-    background: url(http://www.tsmplug.com/wp-content/uploads/2014/12/muhammad-ali-9000469231.jpg);
+    background: image-url("punch/ali.jpg");
   }
 }
 
