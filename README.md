@@ -1,3 +1,5 @@
+[![wercker status](https://app.wercker.com/status/096a2d7cb6ce824ef4df20bf95614109/m "wercker status")](https://app.wercker.com/project/bykey/096a2d7cb6ce824ef4df20bf95614109)
+
 # Landing
 
 ## Testing with subdomain
