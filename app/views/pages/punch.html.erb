@@ -1,163 +1,275 @@
 <div class="wrapper">
   <div class='container landing'>
-    <nav class='hidden-xs'>
-      <div class="logo">
-        <%= render 'shared/punch/logo' %>
+    <div class="row">
+      <nav class='hidden-xs'>
+        <div class="logo">
+          <%= render 'shared/punch/logo' %>
+        </div>
+        <ul class='menu'>
+          <li><a href="#about">A propos du clash</a></li>
+          <li><a href="https://docs.google.com/forms/d/1_RnTdp4SqfgmEAEOh97Qr61_coJfLCAIgidrI08RfT4/viewform" target='_blank' class='callToAction'>Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row">
+      <div class='col-xs-12 col-sm-4 typo'>
+        <%= render 'shared/punch/typo_2' %>
+        <div class="infos">
+          <p class="infos-date">26 MARS 2015 - 20H</p>
+          <p class="infos-location">25 rue du Petit Musc, Paris</p>
+        </div>
       </div>
-
-      <ul class='menu '>
-        <li><a href="#apropos">A propos de la session</a></li>
-        <li class='callToAction'>Inscription</li>
-      </ul>
-    </nav>
-    <div class='col-xs-12 typo'>
-      <%= render 'shared/punch/typo_2' %>
-      <div class="date">
-        <p>19 MARS 2015</p>
-        <p>23 rue du Petit Musc, Paris</p>
+      <div class="col-xs-12 col-sm-8 clash">
+        <h2 class="clash-start">Ready to rumble?</h2>
+        <div class="row">
+          <div class="row startup startup-bg1">
+            <div class="filter"></div>
+            <div class="col-xs-2">
+              <%= image_tag "punch/clash1/birdly.png", class: "img-responsive startup-img" %>
+            </div>
+            <div class="col-xs-7">
+              <div class="startup-details">
+                <h2 class="startup-name">Birdly</h2>
+                <p>Prenez en photo vos notes de frais</p>
+              </div>
+            </div>
+            <div class="col-xs-2 pull-right">
+              <a href="http://www.getbirdly.com/index.html" target="_blank" class="btn btn-default">+ d'infos</a>
+            </div>
+          </div>
+          <div class="row startup startup-bg2">
+            <div class="filter"></div>
+            <div class="col-xs-2">
+              <%= image_tag "punch/clash1/archive.png", class: "img-responsive startup-img" %>
+            </div>
+            <div class="col-xs-7">
+              <div class="startup-details">
+                <h2 class="startup-name">Artchy</h2>
+                <p>Unlocking the archives</p>
+              </div>
+            </div>
+            <div class="col-xs-2 pull-right">
+              <a href="http://www.artchy.io/" target="_blank" class="btn btn-default">+ d'infos</a>
+            </div>
+          </div>
+          <div class="row startup startup-bg3">
+            <div class="filter"></div>
+            <div class="col-xs-2">
+              <%= image_tag "punch/clash1/popchef.png", class: "img-responsive startup-img" %>
+            </div>
+            <div class="col-xs-7">
+              <div class="startup-details">
+                <h2 class="startup-name">PopChef</h2>
+                <p>La saveur du jour, livrée en 15 minutes</p>
+              </div>
+            </div>
+            <div class="col-xs-2 pull-right">
+              <a href="https://eatpopchef.com/" target="_blank" class="btn btn-default">+ d'infos</a>
+            </div>
+          </div>
+          <div class="row startup startup-bg4">
+            <div class="filter"></div>
+            <div class="col-xs-2">
+              <%= image_tag "punch/clash1/melusyn.png", class: "img-responsive startup-img" %>
+            </div>
+            <div class="col-xs-7">
+              <div class="startup-details">
+                <h2 class="startup-name">Melusyn</h2>
+                <p>Gagnez du temps en pré-production</p>
+              </div>
+            </div>
+            <div class="col-xs-2 pull-right">
+              <a href="https://fr.melusyn.com/" target="_blank" class="btn btn-default">+ d'infos</a>
+            </div>
+          </div>
+          <div class="row startup startup-bg5">
+            <div class="filter"></div>
+            <div class="col-xs-2">
+              <%= image_tag "punch/clash1/sparted.png", class: "img-responsive startup-img" %>
+            </div>
+            <div class="col-xs-7">
+              <div class="startup-details">
+                <h2 class="startup-name">Sparted</h2>
+                <p>Rethinking professional behavior</p>
+              </div>
+            </div>
+            <div class="col-xs-2 pull-right">
+              <a href="http://www.sparted.com/" target="_blank" class="btn btn-default">+ d'infos</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div id='apropos' class='feature-container'>
-      <div class="container">
-      <div class="col-sm-12 pitch">
-        <h2>Le principe</h2>
+  <div class='feature-container' id="about">
+    <div class="container pitch">
+      <div class="row">
+        <div class="col-xs-8">
+          <h2><strong>Le principe</strong></h2>
+          <p>
+            5 startups viennent faire challenger leur produit par un jury d'experts (software engineers, front-end devs, UI & UX designers, product managers, data-scientist) <strong style="color:rgba(215, 85, 54, 1);">et par vous !</strong>
+          </p>
+        </div>
+        <div class="col-xs-4">
+          <div class="text-right">
+            <img src="http://33.media.tumblr.com/3e3fd201f15ddfd102a97fb3b263bec2/tumblr_mq7aoorzsu1sr4knto1_400.gif" alt="" style="border-radius: 10px; width: 200px;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="round">
+        <h3>Round #1</h3>
+        <p>La startup fait son pitch produit (1 min) et sa démo (4 min)</p>
+      </div>
+      <div class="round">
+        <h3>Round #2</h3>
         <p>
-          5 startups viennent faire challenger leur produit par un jury d'experts (software engineers, front-end devs, UI & UX designers, product managers, data-scientist)
+          Les membres du jury donnent leur avis et envoient quelques droites :) Pourquoi tu as 8 vues sur ton signup ? As-tu déjà vu un logo à droite ? Pourquoi tu n'as pas utilisé Algolia et gagné 3 mois de dev ? As-tu vraiment besoin d'une géoloc pour ce MVP, rappelle-nous ta value proposition ?
         </p>
       </div>
-      <div class="col-sm-12 pitch interet">
+      <div class="round">
+        <h3>Round #3</h3>
+        <p>
+          Le public monte sur le ring et c'est une pluie de coups et de questions en dessous de la ceinture!
+        </p>
+      </div>
+      <div class="interet">
         <h2>L'intérêt</h2>
         <p>
-          Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
+          Donnez de bons feedbacks à des startups early stage qui en ont besoin. Forger votre culture produit par la même occasion. Du gros win-win en somme !
         </p>
       </div>
+      <div class="interet">
+        <h2>Où ? Quand ?</h2>
+        <p>
+          Au Wagon, 25 rue du petit Musc le 26 mars à 20h30.
+        </p>
       </div>
-      <div class='wrapper-jury'>
-      <div class="container">
-      <div class="col-sm-12 jury">
+    </div>
+    <div class='wrapper-jury'>
+      <div class="container jury">
         <h2>Le Jury</h2>
-        <div class="col-sm-12 col-xs-12 col-md-6">
-          <div class='card judge'>
-
-            <div class="judge-seb feature-image ">
-            </div>
-            <h3>Sébastien Saunier</h3>
-            <p>
-              Baroudeur du code et CTO du Wagon, Sébastien sévit en tant que coach technique pour startup. Il aura à coeur de transmettre rigueur et bonne pratique !
-          </div>
-        </div>
-        <div class="col-sm-12 col-xs-12 col-md-6">
-          <div class='card judge '>
-
-            <div class=" judge-boris feature-image ">
-            </div>
-            <h3>Boris Paillard</h3>
-            <p>
-              Boris a fui sa salle de marché pour se lancer dans le code corps et âme. Maintenant CEO du Wagon, il comprend parfaitement les besoins des débutants et a codé avec Sébastien le site et les plate-formes pédagogiques du Wagon.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-xs-12 col-md-6">
-          <div class='card judge'>
-
-            <div class="feature-image judge-romain">
-            </div>
-            <h3>Romain Paillard</h3>
-            <p>
-              Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-xs-12 col-md-6">
-          <div class='card judge'>
-
-            <div class="feature-image judge-invite">
-            </div>
-            <h3>L'invité de la semaine</h3>
-            <p>
-              Chaque semaine, le jury invite un nouveau profil technique pour renforcer les feedbacks produits.
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      </div>
-
-      </div>
-
-      <div class='people'>
-      <div class="container">
-        <div class="col-sm-12 people-title">
-          <h2>Inscription</h2>
-        </div>
-
-        <div class="col-sm-12 feature">
-        <div class="col-sm-12 col-xs-12 col-md-6">
-
-          <div class="card" id='productOwner'>
-            <div class='cardrousel'>
-              <div class='clickable'>
-                <div class="feature-image-fighter-2 feature-image">
-                </div>
-                <h3>Product Owner</h3>
-                <p>
-                  Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
-                  <a>Proposer un produit</a>
-                </p>
-              </div>
-
-              <div class='form-container'>
-                <header>
-                  Poster un Produit
-                  <i class="fa fa-times"></i>
-
-                </header>
-                <form action="https://formspree.io/thomas@lewagon.org" method="post">
-                  <input type="text" class='input' name='product_url' placeholder='URL du Produit'>
-                  <input type="text" class='input'  name='description'  placeholder='Courte description'>
-                  <input type="text" class='input' name='email'  placeholder='Email'>
-                  <input type="hidden" name="_cc" value="miruna@lewagon.org" />
-                  <div class="group">
-                    <label for="checkbox">
-                      C'est mon produit
-                      <input name='mon_produit' type='checkbox' name="C'est mon produit">
-                    </label>
-                    </div>
-
-                  <input type="submit" class='submit'>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <div class="row">
           <div class="col-sm-12 col-xs-12 col-md-6">
-            <div class='card lover'>
-
-              <div class="feature-image-fighter-3 feature-image ">
+            <div class='card judge'>
+              <div class="judge-seb feature-image ">
               </div>
-              <h3>Product Lover</h3>
+              <h3>Sébastien Saunier</h3>
               <p>
-                Les produits sont décortiqués aux yeux de tous avec les feedbacks qui vont avec, sans bullshit marketing: Tech, design, UX/UI.
-                <a href="">Participer à la session</a>
+                Baroudeur du code et CTO du Wagon, Sébastien sévit en tant que coach technique pour startup. Il saura vous mettre à l'épreuve sur votre produit, sur vos <strong>choix techniques</strong> et fonctionnels.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-xs-12 col-md-6">
+            <div class='card judge '>
+              <div class=" judge-boris feature-image ">
+              </div>
+              <h3>Boris Paillard</h3>
+              <p>
+                CEO & responsable de la partie front-end du Wagon, Boris est habitué à encadrer des entrepreneurs pour construire vite de beaux produits. Il saura vous poser les bonnes questions sur votre UI.
               </p>
             </div>
           </div>
         </div>
-        <div class="clear"></div>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-6">
+            <div class='card judge'>
+              <div class="feature-image judge-romain">
+              </div>
+              <h3>Romain Paillard</h3>
+              <p>
+                Ancien avocat pénaliste et COO du Wagon, Romain a vu plus de 150 entrepreneurs passer au Wagon, le a conseillé sur leur business et leur MVPs. Des produits, ils en a vu une flopée!
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-xs-12 col-md-6">
+           <div class='card judge'>
+              <div class="feature-image judge-invite">
+              </div>
+              <h3>L'invité de la semaine</h3>
+              <p>
+                Chaque mois, le jury invite un nouveau profil technique pour renforcer les feedbacks produits. Product manager, designer, entrepreneur inspirant ? Surprise ! <br><br>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-
       </div>
-
-
-
-    <div class='clear'></div>
+    </div>
   </div>
+  <div class='people' id="subscribe">
+    <div class="container">
+      <div class="col-sm-12 people-title">
+        <h2>Inscription</h2>
+      </div>
+      <div class="col-sm-12 feature">
+      <div class="col-sm-12 col-xs-12 col-md-6">
+        <div class="card" id='productOwner'>
+          <div class='cardrousel'>
+            <div>
+              <div class="feature-image-fighter-2 feature-image">
+              </div>
+              <h3>Product Fighter</h3>
+              <p>
+                Vous avez un produit à tester et vous voulez monter sur le ring, pour recueillir du feedback et vous faire challenger ?
+                <a>Proposer un produit</a>
+              </p>
+            </div>
+
+            <div class='form-container'>
+              <header>
+                Poster un Produit
+              </header>
+              <form action="https://formspree.io/thomas@lewagon.org" method="post">
+                <input type="text" class='input' name='product_url' placeholder='URL du Produit'>
+                <input type="text" class='input'  name='description'  placeholder='Courte description'>
+                <input type="text" class='input' name='email'  placeholder='Email'>
+                <input type="hidden" name="_cc" value="miruna@lewagon.org" />
+                <div class="group">
+                  <label for="checkbox">
+                    C'est mon produit
+                    <input name='mon_produit' type='checkbox' name="C'est mon produit">
+                  </label>
+                  </div>
+
+                <input type="submit" class='submit'>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6">
+        <div class='card lover'>
+          <div class="feature-image-fighter-3 feature-image ">
+          </div>
+          <h3>Product Lover</h3>
+          <p>
+            Vous êtes amateurs de beau sport et de beau product ? Vous voulez vous distraire et vous instruire par la même occasion ?
+            <a href="https://docs.google.com/forms/d/1_RnTdp4SqfgmEAEOh97Qr61_coJfLCAIgidrI08RfT4/viewform" target='_blank'>Participer à la session</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class='clear'></div>
 </div>
 
-<footer>
-  Un événement de vos amis de <img src="http://d9sch4zul5dl8.cloudfront.net/assets/logo-f800df98aa2605c552400667353f47d2.png" id="logo" alt="Le Wagon">
-</footer>
+<%= content_for :after_js do %>
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+<% end %>

@@ -1,4 +1,11 @@
+[![wercker status](https://app.wercker.com/status/096a2d7cb6ce824ef4df20bf95614109/m "wercker status")](https://app.wercker.com/project/bykey/096a2d7cb6ce824ef4df20bf95614109)
+
 # Landing
+
+## Testing with subdomain
+
+1. Launch your app with `rails s -b 0.0.0.0`
+1. Go to `http://punch.lvh.me:3000` for instance
 
 ## Configuration
 
