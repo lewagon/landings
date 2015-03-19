@@ -40,6 +40,58 @@
     }
   }
 
+  .clash {
+    border-left: 1px dashed darken(rgba(217, 85, 47, 1), 6%);
+    padding-left: 60px;
+    &-start {
+      color: rgb(178, 67, 35);
+    }
+  }
+
+  .startup {
+    background-image: url(http://i.dailymail.co.uk/i/pix/2011/11/09/article-2059249-03701A860000044D-498_468x343.jpg);
+    &:first-child {
+      background-image: url(http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2009/10/30/1256905958016/muhammad-ali-001.jpg);
+    }
+    &:last-child {
+      background-image: url(https://tikatango.files.wordpress.com/2013/05/muhammad-ali-boxing-sports-3.jpg);
+    }
+    background-size: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    .filter {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(190, 75, 75, 0.5);
+      z-index: 0;
+      border-radius: 5px;
+    }
+    &-img {
+      border-radius: 10px;
+      border: 2px solid darken(rgba(217, 85, 47, 1), 2%);
+      margin: 20px auto;
+      width: 60%;
+    }
+    &-details {
+      margin: 20px;
+      color: white;
+    }
+    &-name {
+      font-size: 30px;
+      color: white;
+      font-weight: 800;
+    }
+
+  }
+
   .jury {
     padding-left: 30px;
     padding-right: 30px;
@@ -87,48 +139,32 @@
     background: #D9552F;
     height: 100%;
     position: relative;
+    padding-bottom: 100px;
   }
 
-  .date {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 80px;
-    margin-right: 20px;
-    margin-bottom: 100px;
+  .infos {
+    margin-left: 10px;
     font-size: 25px;
     color: rgb(152, 61, 36);
 
-    @media (max-width: $screen-sm) {
-      text-align: center;
-      position: relative;
+    &-date {
+      color: white;
+      letter-spacing: 5px;
       margin: 0;
-      margin-right: 0;
-      margin-top: 80px;
-      margin-bottom: 80px;
     }
 
-    p {
-      &:first-child {
-        color: white;
-        letter-spacing: 5px;
-        margin: 0;
-      }
-
-      &:last-child {
-        text-transform: uppercase;
-        margin: 0;
-        color: rgba(0, 0, 0, 0.19);
-      }
-
+    &-location  {
+      font-size: 20px;
+      margin-top: 10px;
+      margin: 0;
+      color: rgba(0, 0, 0, 0.19);
     }
+
   }
 
   .typo {
-    margin-top: 80px;
     svg {
-      width: 40%;
-      margin-left: 20px;
+      width: 60%;
 
       @media (max-width: $screen-sm) {
         width: 60%;
@@ -149,13 +185,17 @@
   .menu {
     float: right;
     margin-right: 20px;
-      margin-top: 50px;
-
-
+    margin-top: 50px;
 
     li {
       display: inline-block;
       font-weight: 500;
+      a {
+        color: rgb(176, 69, 38);
+        &:hover {
+          color: white;
+        }
+      }
       color: rgb(176, 69, 38);
       letter-spacing: 1Px;
       font-size: 19px;
@@ -172,13 +212,16 @@
       border: 2px solid;
       padding: 10px 20px;
       border-radius: 6px;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
 
 .feature-banner {
-    padding: 200px;
-    position: relative;
+  padding: 200px;
+  position: relative;
   background-position: center center;
   background-size: 100%;
   background-image: url(http://talksport.com/sites/default/files/tscouk_old_image/blog/Muhammad-Ali_0.jpg);
@@ -209,7 +252,7 @@
     }
 
     p {
-      font-size: 30px;
+      font-size: 22px;
       line-height: 1.5;
     }
   }
@@ -227,6 +270,16 @@
 
   }
 
+}
+
+.round {
+  background: whitesmoke;
+  padding: 20px;
+  box-shadow: 1px 1px 1px rgb(226, 225, 225);
+  h3 {
+    color: rgba(215, 85, 54, 1);
+  }
+  margin-bottom: 10px;
 }
 
 .card {
@@ -260,7 +313,6 @@
       display: block;
       text-align: right;
       margin-top: 30px;
-      opacity: 0;
       transition: opacity 0.1s ease;
       color: #D9552F;
   }
@@ -439,7 +491,7 @@ form {
     }
 
     &-3 {
-      background-image: image-url('ph.png');
+      background-image: image-url('PH.png');
       background-size: cover;
       background-position: left top
       ;
@@ -450,29 +502,31 @@ form {
 
 .judge {
   &-boris {
-      background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Boris-Paillard_avatar_1382610686-512x512.jpg);
-      background-size: cover;
+    background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Boris-Paillard_avatar_1382610686-512x512.jpg);
+    background-size: cover;
   }
 
   &-seb {
-      background-size: 100%;
-      background: url(http://d9sch4zul5dl8.cloudfront.net/assets/teachers/seb-35df9e5cbc47899488feeabff2d5b8fb.png);
+    background-size: 100%;
+    background: url(http://d9sch4zul5dl8.cloudfront.net/assets/teachers/seb-35df9e5cbc47899488feeabff2d5b8fb.png);
   }
 
   &-romain {
-      background-size: 100%;
-
-      background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Romain-Paillard_avatar_1382546930-512x512.jpg);
+    background-size: 100%;
+    background: url(http://www.mutinerie.org/wp-content/uploads/2013/10/Romain-Paillard_avatar_1382546930-512x512.jpg);
   }
 
   &-invite {
-      background-size: 100%;
-      background: url(http://www.tsmplug.com/wp-content/uploads/2014/12/muhammad-ali-9000469231.jpg);
+    background-size: 100%;
+    background: url(http://www.tsmplug.com/wp-content/uploads/2014/12/muhammad-ali-9000469231.jpg);
   }
 }
 
 .interet {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  &:last-child {
+    padding-bottom: 80px;
+  }
 }
 
 .wrapper-jury {
@@ -490,4 +544,23 @@ form {
 .judge-invite {
   background-size: cover;
   background-position: center center;
+}
+
+@media (max-width: $screen-sm) {
+  .landing {
+    text-align: center;
+  }
+  svg {
+    width: 40% !important;
+  }
+  .clash {
+    padding-left: 0px !important;
+    border: none !important;
+  }
+  .startup {
+    border-radius: 0px !important;
+    .filter {
+      border-radius: 0px !important;
+    }
+  }
 }
