@@ -12,3 +12,20 @@
  .clear {
   clear: both;
  }
+
+ .social-share {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 4px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #E8E8E8;
+  z-index: 10;
+ }
+
+ .fb-share-button {
+  top: -15px;
+ }
