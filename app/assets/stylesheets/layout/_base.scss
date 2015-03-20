@@ -20,14 +20,14 @@
     bottom: 0;
     padding-top: 12px;
     line-height: 40px;
-    text-align: right;
+    text-align: left;
     box-shadow: 0 0 1px rgba(0,0,0,0.15);
     background-color: rgba(255, 255, 255, 0.97);
     z-index: 10;
 
     svg {
       width: 150px;
-      float: left;
+      float: right;
       opacity: 0.15;
 
       path, rect, circle, text {
