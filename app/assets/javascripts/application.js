@@ -34,6 +34,20 @@ $(function() {
   });
 });
 
+function update() {
+  if ($(window).scrollTop() > 300) {
+    $('#share_scroll').animate({
+      "bottom": '0px'
+    }, 200);
+    } else {
+      $('#share_scroll').animate({
+        "bottom": '-90px'
+    }, 200);
+  }
+}
+
+setInterval(update, 500);
+
 !function(d,s,id){
   var js,fjs=d.getElementsByTagName(s)[0],
   p=/^http:/.test(d.location)?'http':'https';
