@@ -35,7 +35,7 @@ $(function() {
 });
 
 function update() {
-  if ($(window).scrollTop() > 300) {
+  if ($(window).scrollTop() > 10) {
     $('#share_scroll').animate({
       "bottom": '0px'
     }, 200);
