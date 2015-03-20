@@ -9,7 +9,7 @@
 // app/assets/javascripts/app instead, and put your code there
 
 
-$('#productOwner .clickable').click(function(){
+$('#productOwner').click(function(){
   $('.form-container').addClass('active')
 
 })
