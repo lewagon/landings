@@ -205,6 +205,7 @@
       font-weight: 500;
       a {
         color: rgb(176, 69, 38);
+
         &:hover {
           color: white;
         }
@@ -213,7 +214,7 @@
       letter-spacing: 1Px;
       font-size: 19px;
       margin-left: 50px;
-      transition: color 0.1s ease, border-color 0.1s ease;
+
       cursor: pointer;
       &:hover {
         color: white;
