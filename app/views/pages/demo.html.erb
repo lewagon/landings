@@ -1,0 +1,111 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1546455288911265";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<% products = YAML.load_file('db/promo7.yml') %>
+<div class="demo_page">
+  <header>
+    <div class="container">
+      <div class="content">
+        <span class='hidden-sm hidden-lg hidden-md'>
+          <%= render "shared/demo/d7" %>
+        </span>
+        <span class='hidden-xs'>
+        <%= render 'shared/wagon/logo' %>
+        </span>
+        <span class='hidden-xs' style='position:relative;bottom:28px'>demo day live</span>
+        <div class='slogan'>
+        <span class='text hidden-xs'>
+          <b> 24 students</b> pitch 2 weeks maked products
+        </span>
+        <div class="fb-like hidden-xs" data-href="http://demo.lewagon.org" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
+       </div>
+      </div>
+    </div>
+    <div class="particles-container hidden-xs hidden-sm">
+      <div id="particles-js"></div>
+    </div>
+  </header>
+  <div class="video-container">
+    <div class="video">
+      <div class="info-container hidden-xs hidden-sm">
+        <div class="info  ">
+          <div class="pull-left">
+            <%= render "shared/demo/d7" %>
+          </div>
+          <div class="pull-left">
+            <p>LE WAGON</p>
+            <p>DEMO DAY</p>
+            <p>7th BATCH</p>
+          </div>
+          <div class="clear"></div>
+          <ul class='list-inline'>
+            <li>MAY 10</li>
+            <li>PARIS</li>
+            <li>THE FAMILY</li>
+          </ul>
+      </div>
+      </div>
+      <iframe  src="https://www.youtube.com/embed/hHPOV8vz5Q8?showinfo=0&rel=0&modestbranding=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h3>STUDENT PITCHES LIVE HERE AT 6 P.M. </h3>
+  </div>
+</div>
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <div class="container container-products">
+  <ul class="nav nav-tabs" role="tablist">
+
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Student Products</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Live Chat</a></li>
+  </ul>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active fade in" id="home">
+      <div class="container container-products">
+        <ul class='products'>
+          <% products.each do |product|  %>
+            <li>
+              <div class="product-info">
+                <div class="product-name">
+                  <%= product["name"] %>
+                </div>
+                <div class="product-tagline">
+                  <%= product["tagline"] %>
+                </div>
+              </div>
+
+              <ul class='list-inline pull-right' style='  position: relative;bottom: 11px;'>
+                <% product["images"].each do |image| %>
+                  <li><img src="<%= image %>" width="50px" class='img-circle' alt=""></li>
+                <% end %>
+              </ul>
+              <div class="clear"></div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div role="tabpanel fade" class="tab-pane" id="profile"></div>
+
+  </div>
+
+</div>
+
+
+<%= content_for(:after_js) do %>
+  <script>
+    $('.nav-tabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+<% end %>

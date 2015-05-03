@@ -1,0 +1,9 @@
+- name: Needle
+  tagline: Faire du stuff cool
+  images:
+    - "http://www.avancorservices.com/img/default-profile-img.png"
+
+- name: Captain Drive
+  tagline: Faire du stuff cool
+  images:
+    - "http://www.avancorservices.com/img/default-profile-img.png"
