@@ -1,9 +1,11 @@
 products:
   - name: Needle
     tagline: Faire du stuff cool
+    link: test
     images:
       - "http://www.avancorservices.com/img/default-profile-img.png"
       - "http://www.avancorservices.com/img/default-profile-img.png"
+
 
   - name: Captain Drive
     tagline: Faire du stuff cool
