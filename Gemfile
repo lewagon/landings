@@ -23,7 +23,6 @@ gem "rails-i18n"
 gem "devise-i18n"
 gem "devise-i18n-views"
 
-gem 'rails-assets-slick.js'
 gem 'rails-assets-particles.js'
 
 
