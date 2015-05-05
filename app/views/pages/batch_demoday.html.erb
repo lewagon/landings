@@ -63,7 +63,8 @@
       <div class="container container-products">
         <ul class='products'>
           <% @batch[:products].each do |product|  %>
-            <li>
+            <li class='product <%= "product-clickable" if product['link'] %>'>
+              <a href="<%= product['link'] %>"><span></span></a>
               <div class="product-info">
                 <div class="product-name">
                   <%= product["name"] %>
@@ -73,7 +74,7 @@
                 </div>
               </div>
 
-              <ul class='list-inline pull-right' style='  position: relative;bottom: 11px;'>
+              <ul class='list-inline pull-right' style='position: relative;bottom: 11px;'>
                 <% product["images"].each do |image| %>
                   <li><img src="<%= image_path "batch8/#{image}" %>" width="50px" class='img-circle' alt=""></li>
                 <% end %>

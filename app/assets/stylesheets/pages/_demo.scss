@@ -196,6 +196,28 @@
     padding-right: 5px;
   }
 
+  a span {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+  }
+
+  .product {
+    position: relative;
+    padding-left: 15px;
+    border-radius: 5px;
+    padding-right: 15px;
+
+    &.product-clickable {
+      cursor: pointer;
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
   ul {
     padding-left: 0;
   }
