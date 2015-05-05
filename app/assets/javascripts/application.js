@@ -2,7 +2,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require slick
-//= require particles.js
+//= require particles.js.js
 //= require app/particlesService.js
 //= require_tree ./app
 

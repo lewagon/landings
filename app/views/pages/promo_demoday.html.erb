@@ -6,7 +6,6 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1546455288911265";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<% products = YAML.load_file('db/promo7.yml') %>
 <div class="demo_page">
   <header>
     <div class="container">
@@ -72,7 +71,7 @@
     <div role="tabpanel" class="tab-pane active fade in" id="home">
       <div class="container container-products">
         <ul class='products'>
-          <% products.each do |product|  %>
+          <% @batch[:products].each do |product|  %>
             <li>
               <div class="product-info">
                 <div class="product-name">
