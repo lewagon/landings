@@ -1,28 +1,37 @@
 .demo_page {
 
+  .fb-comments {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+  }
+
   .slogan {
     position: relative;
     padding-top: 30px;
+
+    &-container {
+      max-width: 416px;
+      margin: auto;
+
+      .fb-like {
+       position: relative;
+       top: 2px;
+      }
+
+
+    }
+
     .text {
-      padding-top: 31px;
       color: rgba(255, 255, 255, 0.83);
       font-size: 19px;
       font-size: 18px;
       position: relative;
       bottom: 0px;
-      /* padding-top: 20px; */
-      right: 34px;
     }
 
 
-    .fb-like {
-      position: absolute;
-      left: 338px;
-      right: 0;
-      margin: auto;
-      top: 34px;
-      bottom: 0;
-    }
   }
 
   h3 {
