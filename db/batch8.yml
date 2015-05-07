@@ -23,7 +23,7 @@ products:
       - katalina_nadasi.jpg
 
   - name: Delice Avenue
-    tagline: Trouve les meilleurs pâtisseries maison près de chez toi
+    tagline: Trouve les meilleures pâtisseries maison près de chez toi
     link:
     images:
       - kevin_lisinac.jpg
@@ -39,7 +39,7 @@ products:
       - samir_elmaoujoudi.jpg
 
   - name: Needl
-    tagline: Le top resto de vos amis
+    tagline: Les top restos de vos amis
     link:
     images:
       - valentin_menard.jpg
