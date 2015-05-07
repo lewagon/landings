@@ -23,4 +23,12 @@ module ApplicationHelper
       content_for?(:meta_image) ? content_for(:meta_image) : APP_CONFIG['meta_image']
     end
   end
+
+  def meta_favicon(desc = nil)
+    if desc.present?
+      content_for :meta_favicon, desc
+    else
+      content_for?(:meta_favicon) ? content_for(:meta_favicon) : APP_CONFIG['meta_favicon']
+    end
+  end
 end
