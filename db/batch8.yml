@@ -16,14 +16,14 @@ products:
       - david_bellaiche.jpg
 
   - name: Sneakr
-    tagline:
+    tagline: LovR
     link:
     images:
       - romain_pignoux.jpg
       - katalina_nadasi.jpg
 
-  - name: Macaron
-    tagline:
+  - name: Delice Avenue
+    tagline: Trouve les meilleurs pâtisseries maison près de chez toi
     link:
     images:
       - kevin_lisinac.jpg
@@ -53,21 +53,21 @@ products:
       - nicolas_biencour.jpg
 
   - name: Benchr
-    tagline:
+    tagline: Benchmarking made easy
     link:
     images:
       - gatien_hannicote.jpg
       - jaime_pimenta.jpg
 
-  - name: ReFunder
-    tagline:
+  - name: ReFunders
+    tagline: Plateforme de renvente d'equity issue du crowdfunding
     link:
     images:
       - alex_cordani.jpg
       - mickael_giami.jpg
 
   - name: CForGood
-    tagline:
+    tagline: Les bons plans de la consommation responsable
     link:
     images:
       - nasreddine_boukehil.jpg
