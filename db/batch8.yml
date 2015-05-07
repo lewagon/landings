@@ -52,7 +52,7 @@ products:
       - mathieu_lhoste.jpg
       - nicolas_biencour.jpg
 
-  - name: Benchr
+  - name: BenchR
     tagline: Benchmarking made easy
     link:
     images:
