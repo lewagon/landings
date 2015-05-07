@@ -8,7 +8,7 @@ products:
       - nicolas_feer.jpg
 
   - name: MediaPronos
-    tagline:
+    tagline: Suivez. Pariez. Gagnez !
     link:
     images:
       - jordan_warmoes.jpg
@@ -30,8 +30,8 @@ products:
       - fanny_roseau.jpg
       - anouar_akerrouach.jpg
 
-  - name: Capitaine Drive
-    tagline:
+  - name: Captain Drive
+    tagline: Votre mécanicien à domicile
     link:
     images:
       - pierre_tucoulat.jpg
@@ -39,14 +39,14 @@ products:
       - samir_elmaoujoudi.jpg
 
   - name: Needl
-    tagline:
+    tagline: Le top resto de vos amis
     link:
     images:
       - valentin_menard.jpg
       - charlotte_cady.jpg
 
-  - name: HtoH
-    tagline:
+  - name: QstomR
+    tagline: Be the customer of everyone
     link:
     images:
       - mathieu_lhoste.jpg
