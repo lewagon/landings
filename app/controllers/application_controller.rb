@@ -10,6 +10,14 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+  def default_url_options
+    if Rails.env.production?
+      { host: 'wagon-landings.herokuapp.com' }
+    else
+      {}
+    end
+  end
+
   private
 
   def devise_or_pages_controller?
