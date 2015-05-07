@@ -1,12 +1,5 @@
 .demo_page {
 
-  .fb-comments {
-    margin: auto;
-    display: block;
-    text-align: center;
-    padding-top: 40px;
-  }
-
   .slogan {
     position: relative;
     padding-top: 30px;
@@ -14,12 +7,19 @@
     &-container {
       max-width: 416px;
       margin: auto;
+      padding-bottom: 25px;
 
       .fb-like {
-       position: relative;
-       top: 2px;
+        position: relative;
+        top: 4px;
+        left: 20px;
       }
 
+      @media (max-width: $screen-sm) {
+        .fb-like {
+          display: none;
+        }
+      }
     }
 
     .text {
@@ -238,6 +238,10 @@
   .nav-tabs {
     margin-top: 40px;
   }
+}
+
+.container-products.disqus {
+  padding: 20px;
 }
 
 .products {
