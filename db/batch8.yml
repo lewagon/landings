@@ -1,7 +1,7 @@
 products:
   - name: Delice Avenue
     tagline: Trouve les meilleures pâtisseries maison près de chez toi
-    link:
+    link: https://deliceavenue.herokuapp.com/
     images:
       - kevin_lisinac.jpg
       - fanny_roseau.jpg
@@ -9,21 +9,21 @@ products:
 
   - name: QstomR
     tagline: Be everyone's customer
-    link:
+    link: http://www.qstomr.com/
     images:
       - mathieu_lhoste.jpg
       - nicolas_biencour.jpg
 
   - name: CForGood
     tagline: Les bons plans de la consommation responsable
-    link:
+    link: http://cforgood.herokuapp.com
     images:
       - nasreddine_boukehil.jpg
       - allan_floury.jpg
 
   - name: Moonshot
     tagline: "Liberté, Égalité, Productivité"
-    link:
+    link: http://gomoonshot.com
     images:
       - willem_browne.jpg
       - marina_starkova.jpg
@@ -31,28 +31,28 @@ products:
 
   - name: ReFunders
     tagline: Plateforme de revente d'equity issue du crowdfunding
-    link:
+    link: htpp://refunders.io
     images:
       - alex_cordani.jpg
       - mickael_giami.jpg
 
   - name: Sneakr
     tagline: Sneaker digger
-    link:
+    link: http://sneakr.fr
     images:
       - romain_pignoux.jpg
       - katalina_nadasi.jpg
 
   - name: Needl
     tagline: Les top restos de vos amis
-    link:
+    link: http://needl.fr
     images:
       - valentin_menard.jpg
       - charlotte_cady.jpg
 
   - name: BenchR
     tagline: Benchmarking made easy
-    link:
+    link: http://benchrapp.herokuapp.com/
     images:
       - gatien_hannicote.jpg
       - jaime_pimenta.jpg
@@ -67,7 +67,7 @@ products:
 
   - name: Captain Drive
     tagline: Votre mécanicien à domicile
-    link:
+    link: http://captain-drive-production.herokuapp.com/
     images:
       - pierre_tucoulat.jpg
       - hugo_barberot.jpg
