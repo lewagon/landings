@@ -1,4 +1,26 @@
 products:
+  - name: Delice Avenue
+    tagline: Trouve les meilleures pâtisseries maison près de chez toi
+    link:
+    images:
+      - kevin_lisinac.jpg
+      - fanny_roseau.jpg
+      - anouar_akerrouach.jpg
+
+  - name: QstomR
+    tagline: Be everyone's customer
+    link:
+    images:
+      - mathieu_lhoste.jpg
+      - nicolas_biencour.jpg
+
+  - name: CForGood
+    tagline: Les bons plans de la consommation responsable
+    link:
+    images:
+      - nasreddine_boukehil.jpg
+      - allan_floury.jpg
+
   - name: Moonshot
     tagline: "Liberté, Égalité, Productivité"
     link:
@@ -6,6 +28,34 @@ products:
       - willem_browne.jpg
       - marina_starkova.jpg
       - nicolas_feer.jpg
+
+  - name: ReFunders
+    tagline: Plateforme de revente d'equity issue du crowdfunding
+    link:
+    images:
+      - alex_cordani.jpg
+      - mickael_giami.jpg
+
+  - name: Sneakr
+    tagline: Sneaker digger
+    link:
+    images:
+      - romain_pignoux.jpg
+      - katalina_nadasi.jpg
+
+  - name: Needl
+    tagline: Les top restos de vos amis
+    link:
+    images:
+      - valentin_menard.jpg
+      - charlotte_cady.jpg
+
+  - name: BenchR
+    tagline: Benchmarking made easy
+    link:
+    images:
+      - gatien_hannicote.jpg
+      - jaime_pimenta.jpg
 
   - name: MediaPronos
     tagline: Suivez. Pariez. Gagnez !
@@ -15,21 +65,6 @@ products:
       - bertrand_bussac.jpg
       - david_bellaiche.jpg
 
-  - name: Sneakr
-    tagline: Sneaker digger
-    link:
-    images:
-      - romain_pignoux.jpg
-      - katalina_nadasi.jpg
-
-  - name: Delice Avenue
-    tagline: Trouve les meilleures pâtisseries maison près de chez toi
-    link:
-    images:
-      - kevin_lisinac.jpg
-      - fanny_roseau.jpg
-      - anouar_akerrouach.jpg
-
   - name: Captain Drive
     tagline: Votre mécanicien à domicile
     link:
@@ -38,37 +73,3 @@ products:
       - hugo_barberot.jpg
       - samir_elmaoujoudi.jpg
 
-  - name: Needl
-    tagline: Les top restos de vos amis
-    link:
-    images:
-      - valentin_menard.jpg
-      - charlotte_cady.jpg
-
-  - name: QstomR
-    tagline: Be the customer of everyone
-    link:
-    images:
-      - mathieu_lhoste.jpg
-      - nicolas_biencour.jpg
-
-  - name: BenchR
-    tagline: Benchmarking made easy
-    link:
-    images:
-      - gatien_hannicote.jpg
-      - jaime_pimenta.jpg
-
-  - name: ReFunders
-    tagline: Plateforme de revente d'equity issue du crowdfunding
-    link:
-    images:
-      - alex_cordani.jpg
-      - mickael_giami.jpg
-
-  - name: CForGood
-    tagline: Les bons plans de la consommation responsable
-    link:
-    images:
-      - nasreddine_boukehil.jpg
-      - allan_floury.jpg
