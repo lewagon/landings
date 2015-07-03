@@ -1,7 +1,6 @@
 source "https://rubygems.org"
-source 'https://rails-assets.org'
 
-ruby "2.2.0"
+ruby "2.2.2"
 
 gem "rails", "4.2.0"
 gem "pg"
@@ -23,7 +22,9 @@ gem "rails-i18n"
 gem "devise-i18n"
 gem "devise-i18n-views"
 
-gem 'rails-assets-particles.js'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
 
 
 group :development, :test do

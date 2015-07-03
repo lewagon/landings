@@ -235,7 +235,7 @@ DEPENDENCIES
   quiet_assets
   rack-timeout
   rails (= 4.2.0)
-  rails-assets-particles.js
+  rails-assets-particles.js!
   rails-i18n
   rails_12factor
   sass-rails (~> 5.0)
