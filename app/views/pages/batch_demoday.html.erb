@@ -1,5 +1,5 @@
-<% title "Live Event - Le Wagon Demo Day #8" %>
-<% meta_description "24 students pitch 10 projects made in 2 weeks" %>
+<% title "Live Event - Le Wagon Demo Day ##{@batch[:batch]}" %>
+<% meta_description "#{students_count(@batch)} students pitch #{@batch[:products].length} projects made in 2 weeks" %>
 <% meta_image "batch8/demo_card.jpg" %>
 <% meta_favicon "favicon_demo.png" %>
 
@@ -40,19 +40,17 @@
           <div class="pull-left">
             <p>LE WAGON</p>
             <p>DEMO DAY</p>
-            <p>8th BATCH</p>
+            <p><%= @batch[:batch] %>th BATCH</p>
           </div>
           <div class="clear"></div>
           <ul class='list-inline'>
-            <li>MAY 8</li>
             <li>PARIS</li>
-            <li>THE FAMILY</li>
           </ul>
       </div>
       </div>
-      <iframe  src="https://www.youtube.com/embed/Oh3TRLT6rAw?showinfo=0&rel=0&modestbranding=0" frameborder="0" allowfullscreen></iframe>
+      <iframe  src="https://www.youtube.com/embed/<%= @batch[:youtube_id] %>?showinfo=0&rel=0&modestbranding=0" frameborder="0" allowfullscreen></iframe>
     </div>
-    <h3>LIVE STARTS AT 6 P.M. ON FRIDAY 8</h3>
+    <h3>LIVE STARTS AT <%= l @batch[:datetime], format: '%l' %> P.M. ON FRIDAY <%= l @batch[:datetime], format: '%-d' %></h3>
   </div>
 </div>
 <div role="tabpanel">
