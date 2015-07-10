@@ -1,10 +1,13 @@
+batch: 10
+datetime: 2015-07-10 17:00:00 +2
+youtube_id: keGq_YUE4VA
 products:
-  - name: Open Loge
-    tagline: Retrouvez les services de la loge de votre quartier
-    link: https://openloge-production.herokuapp.com/
+  - name: The Babyboom
+    tagline: "Préparez-vous à devenir parents, à votre rythme, depuis votre canapé."
+    link: http://babyboom.herokuapp.com/
     images:
-      - thomas-sertorio.jpg
-      - romain-bernard.jpg
+      - tatiana-perillo.jpg
+      - christopher-lemoine.jpg
 
   - name: GoMobily
     tagline: Search for accessibility information here
@@ -14,20 +17,20 @@ products:
       - mary-rougeaux.jpg
       - paulin-tassi.jpg
 
-  - name: La Réserve
-    tagline: Aimez vos réservations
-    link: http://la-reserve.herokuapp.com/
+  - name: Open Loge
+    tagline: Retrouvez les services de la loge de votre quartier
+    link: https://openloge-production.herokuapp.com/
     images:
-      - nathan-obadia.jpg
-      - olivia-brami.jpg
-      - karine-bialobroda.jpg
+      - thomas-sertorio.jpg
+      - romain-bernard.jpg
 
-  - name: Tournesol Microgrids
-    tagline: A Network of Microgrid pioneers
-    link: https://tournesol-microgrid-production.herokuapp.com/
+  - name: Beauty Time
+    tagline: "Prenez vos rendez-vous beauté en ligne, 24h / 24h"
+    link: http://beautytime.herokuapp.com/
     images:
-      - julien-mamalian.jpg
-      - boutayna-badou.jpg
+      - marion-grandjean.jpg
+      - dimitri-boukobza.jpg
+      - alex-sellam.jpg
 
   - name: Pepeat
     tagline: Commandez des plats maison cuisinés par des passionnés
@@ -35,6 +38,13 @@ products:
     images:
       - jonathan-maurin.jpg
       - florent-angles.jpg
+
+  - name: Tournesol Microgrids
+    tagline: A Network of Microgrid pioneers
+    link: https://tournesol-microgrid-production.herokuapp.com/
+    images:
+      - julien-mamalian.jpg
+      - boutayna-badou.jpg
 
   - name: Le Salon
     tagline: Les meubles directement depuis les fabricants
@@ -44,24 +54,17 @@ products:
       - noe-stauffert.jpg
       - esther-banales.jpg
 
-  - name: Makis' War
-    tagline: Soy qui peut !
+  - name: La Réserve
+    tagline: Aimez vos réservations
+    link: http://la-reserve.herokuapp.com/
+    images:
+      - nathan-obadia.jpg
+      - olivia-brami.jpg
+      - karine-bialobroda.jpg
+
+  - name: MakiWars
+    tagline: Salmon vs Avocado. Choose your side.
     link: http://makiswar-production.herokuapp.com/
     images:
       - maxime-braud.jpg
       - gregoire-charles.jpg
-
-  - name: The Babyboom
-    tagline: "Préparez-vous à devenir parents, à votre rythme, depuis votre canapé."
-    link: http://babyboom.herokuapp.com/
-    images:
-      - tatiana-perillo.jpg
-      - christopher-lemoine.jpg
-
-  - name: Beauty Time
-    tagline: "Prenez vos rendez-vous beauté en ligne, 24h / 24h"
-    link: http://beautytime.herokuapp.com/
-    images:
-      - marion-grandjean.jpg
-      - dimitri-boukobza.jpg
-      - alex-sellam.jpg
