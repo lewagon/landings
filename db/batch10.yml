@@ -11,7 +11,7 @@ products:
 
   - name: GoMobily
     tagline: Search for accessibility information here
-    link: http://gomobily-production.herokuapp.com/
+    link: http://www.gomobi.ly/
     images:
       - katy-webster.jpg
       - mary-rougeaux.jpg
@@ -19,7 +19,7 @@ products:
 
   - name: Open Loge
     tagline: Retrouvez les services de la loge de votre quartier
-    link: https://openloge-production.herokuapp.com/
+    link: http://beta.openloge.fr
     images:
       - thomas-sertorio.jpg
       - romain-bernard.jpg
