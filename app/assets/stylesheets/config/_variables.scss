@@ -1,0 +1,59 @@
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+// Google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700|Raleway:300,400");
+$base-font: Avenir;
+$header-font: Avenir;
+$navbar-font: 'Raleway', "sans-serif";
+
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-35.eot');
+  src: font-url('avenir/avenir-35.ttf'),
+       font-url('avenir/avenir-35.svg'),
+       font-url('avenir/avenir-35.woff')
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-45.eot');
+  src: font-url('avenir/avenir-45.ttf'),
+       font-url('avenir/avenir-45.svg'),
+       font-url('avenir/avenir-45.woff');
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: font-url('avenir/avenir-65.eot');
+  src: font-url('avenir/avenir-65.ttf'),
+       font-url('avenir/avenir-65.svg'),
+       font-url('avenir/avenir-65.woff');
+
+  font-weight: bold;
+}
+// $my-font: "Font Name";
+
+// Font-size and line-height
+$base-size: 16px;
+$base-height: 1.4;
+
+/* -------------------------------------
+ * Colors
+ * ------------------------------------- */
+// Scheme
+$red: #EE5F5B;
+$blue: #469AE0;
+$yellow: #FDB631;
+$orange: #E67E22;
+$green: #32B796;
+$purple: #6452BD;
+
+// Gray scale
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee

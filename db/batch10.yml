@@ -1,0 +1,70 @@
+batch: 10
+datetime: 2015-07-10T17:00:00Z
+youtube_id: keGq_YUE4VA
+products:
+  - name: The Babyboom
+    tagline: "Préparez-vous à devenir parents, à votre rythme, depuis votre canapé."
+    link: http://www.thebabyboom.fr
+    images:
+      - tatiana-perillo.jpg
+      - christopher-lemoine.jpg
+
+  - name: GoMobily
+    tagline: Search for accessibility information here
+    link: http://www.gomobi.ly/
+    images:
+      - katy-webster.jpg
+      - mary-rougeaux.jpg
+      - paulin-tassi.jpg
+
+  - name: Open Loge
+    tagline: Retrouvez les services de la loge de votre quartier
+    link: http://beta.openloge.fr
+    images:
+      - thomas-sertorio.jpg
+      - romain-bernard.jpg
+
+  - name: Beauty Time
+    tagline: "Prenez vos rendez-vous beauté en ligne, 24h / 24h"
+    link: http://beautytime.herokuapp.com/
+    images:
+      - marion-grandjean.jpg
+      - dimitri-boukobza.jpg
+      - alex-sellam.jpg
+
+  - name: Pepeat
+    tagline: Commandez des plats maison cuisinés par des passionnés
+    link: http://pepeat-production.herokuapp.com/
+    images:
+      - jonathan-maurin.jpg
+      - florent-angles.jpg
+
+  - name: Tournesol Microgrids
+    tagline: A Network of Microgrid pioneers
+    link: https://tournesol-microgrid-production.herokuapp.com/
+    images:
+      - julien-mamalian.jpg
+      - boutayna-badou.jpg
+
+  - name: Le Salon
+    tagline: Les meubles directement depuis les fabricants
+    link: https://lesalon.herokuapp.com/
+    images:
+      - david-muhlberger.jpg
+      - noe-stauffert.jpg
+      - esther-banales.jpg
+
+  - name: La Réserve
+    tagline: Aimez vos réservations
+    link: http://la-reserve.herokuapp.com/
+    images:
+      - nathan-obadia.jpg
+      - olivia-brami.jpg
+      - karine-bialobroda.jpg
+
+  - name: MakiWars
+    tagline: Salmon vs Avocado. Choose your side.
+    link: http://makiswar-production.herokuapp.com/
+    images:
+      - maxime-braud.jpg
+      - gregoire-charles.jpg

@@ -1,0 +1,119 @@
+<% title "Live Event - Le Wagon Demo Day ##{@batch[:batch]}" %>
+<% meta_description "#{students_count(@batch)} students pitch #{@batch[:products].length} projects made in 2 weeks" %>
+<% meta_image "batch#{@batch[:batch]}/demo_card_10.jpg" %>
+<% meta_favicon "favicon_demo.png" %>
+
+<%= render "shared/fbsdk" %>
+<div class="demo_page">
+
+  <header>
+    <div class="container">
+      <div class="content">
+        <span class='hidden-sm hidden-lg hidden-md'>
+          <%= render "shared/demo/d8" %>
+        </span>
+        <span class='hidden-xs'>
+        <%= render 'shared/wagon/logo' %>
+        </span>
+        <span class='hidden-xs' style='position:relative;bottom:28px'>demo day live</span>
+        <div class="slogan-container">
+          <div class='slogan'>
+          <span class='text hidden-xs pull-left'>
+            <b> <%= students_count(@batch) %> students</b> pitch <%= @batch[:products].length %> projects made in 2 weeks
+          </span>
+         </div>
+         <div class="fb-like pull-right" data-href="http://demoday.lewagon.org/10" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+       </div>
+      </div>
+    </div>
+    <div class="particles-container hidden-xs hidden-sm">
+      <div id="particles-js"></div>
+    </div>
+  </header>
+  <div class="video-container">
+    <div class="video">
+      <div class="info-container hidden-xs hidden-sm hidden-md hidden-lg">
+        <div class="info  ">
+          <div class="pull-left">
+            <%= render "shared/demo/d8" %>
+          </div>
+          <div class="pull-left">
+            <p>LE WAGON</p>
+            <p>DEMO DAY</p>
+            <p><%= @batch[:batch] %>th BATCH</p>
+          </div>
+          <div class="clear"></div>
+          <ul class='list-inline'>
+            <li>PARIS</li>
+          </ul>
+      </div>
+      </div>
+      <iframe  src="https://www.youtube.com/embed/<%= @batch[:youtube_id] %>?showinfo=0&rel=0&modestbranding=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h3>LIVE STARTS AT <%= l @batch[:datetime], format: '%l' %> P.M. ON FRIDAY <%= l @batch[:datetime], format: '%-d' %></h3>
+  </div>
+</div>
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <div class="container container-products">
+  <ul class="nav nav-tabs" role="tablist">
+
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Student Products</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Live Chat</a></li>
+  </ul>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active fade in" id="home">
+      <div class="container container-products">
+        <ul class='products'>
+          <% @batch[:products].each do |product|  %>
+            <li class='product <%= "product-clickable" if product['link'] %>'>
+              <% if product['link'] %>
+                <a target='_blank' href="<%= product['link'] %>"><span></span></a>
+              <% end %>
+              <div class="product-info">
+                <div class="product-name">
+                  <%= product["name"] %>
+                </div>
+                <div class="product-tagline">
+                  <%= product["tagline"] %>
+                </div>
+              </div>
+
+              <ul class='list-inline pull-right user-list'>
+                <% product["images"].each do |image| %>
+                  <li><img src="<%= image_path "batch#{@batch[:batch]}/#{image}" %>" width="50px" class='img-circle' alt=""></li>
+                <% end %>
+              </ul>
+              <div class="clear"></div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div role="tabpanel " class="tab-pane" id="profile">
+
+      <div class="container container-products disqus">
+        <%= render "shared/disqus" %>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<%= content_for(:after_js) do %>
+  <script>
+    $('.nav-tabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+
+
+<% end %>
